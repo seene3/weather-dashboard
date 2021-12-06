@@ -19,66 +19,24 @@
                 <button type="submit" class="btn btn-primary w-100 search">Search</button>
             </form>
             <div class="history">
-                <button type="button" class="btn btn-secondary w-100 search">Austin</button>
-                <button type="button" class="btn btn-secondary w-100 search">Chicago</button>
-                <button type="button" class="btn btn-secondary w-100 search">New York</button>
-                <button type="button" class="btn btn-secondary w-100 search">Seattle</button>
-                <button type="button" class="btn btn-secondary w-100 search">San Franscico</button>
             </div>
         </div>
         <div class="col-8 city-box">
             <div class="border border-dark result">
-                <h2>City (12/5/21)</h2>
-                <i class="bi bi-brightness-high"></i>
+                <h2 id="current-city"></h2>
+                <img id="current-weather-img"></img>
                 <ul class="list-group list-group-flush" id="current-weather">
-                    <li class="list-group-item">Temp:</li>
-                    <li class="list-group-item">Wind:</li>
-                    <li class="list-group-item">Humidity:</li>
-                    <li class="list-group-item">UV Index:</li>
+                    <li class="list-group-item" id="current-temp"></li>
+                    <li class="list-group-item" id="current-wind"></li>
+                    <li class="list-group-item" id="current-humid"></li>
                 </ul>
             </div>
             <div class="col-13 row">
                 <h2>5-Day Forecast:</h2>
                 <div class="forecast">
                     <div class="border border-dark bg-info card">
-                        <h3>12/6/21</h3>
-                        <i class="bi bi-brightness-high"></i>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-info">Temp:</li>
-                            <li class="list-group-item bg-info">Wind:</li>
-                            <li class="list-group-item bg-info">Humidity:</li>
-                        </ul>
-                    </div>
-                    <div class="border border-dark bg-info card">
-                        <h3>12/6/21</h3>
-                        <i class="bi bi-brightness-high"></i>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-info">Temp:</li>
-                            <li class="list-group-item bg-info">Wind:</li>
-                            <li class="list-group-item bg-info">Humidity:</li>
-                        </ul>
-                    </div>
-                    <div class="border border-dark bg-info card">
-                        <h3>12/6/21</h3>
-                        <i class="bi bi-brightness-high"></i>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-info">Temp:</li>
-                            <li class="list-group-item bg-info">Wind:</li>
-                            <li class="list-group-item bg-info">Humidity:</li>
-                        </ul>
-                    </div>
-                    <div class="border border-dark bg-info card">
-                        <h3>12/6/21</h3>
-                        <i class="bi bi-brightness-high"></i>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-info">Temp:</li>
-                            <li class="list-group-item bg-info">Wind:</li>
-                            <li class="list-group-item bg-info">Humidity:</li>
-                        </ul>
-                    </div>
-                    <div class="border border-dark bg-info card">
-                        <h3>12/6/21</h3>
-                        <i class="bi bi-brightness-high"></i>
+                        <h3 id="date"></h3>
+                        <img id="date-img"></img>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item bg-info">Temp:</li>
                             <li class="list-group-item bg-info">Wind:</li>
